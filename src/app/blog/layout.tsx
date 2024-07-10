@@ -1,13 +1,11 @@
 
-
 export default function BlogLayout({
   children,
 }: Readonly<{
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
-      <body>
+      <div>
         <header className="bg-blue-200 p-4">
           <p>Header for blog layout</p>
         </header>
@@ -15,7 +13,6 @@ export default function BlogLayout({
         <footer className="bg-green-200 p-4">
           <p>Footer for blog layout</p>
         </footer>
-      </body>
-    </html>
+      </div>
   )
 }
