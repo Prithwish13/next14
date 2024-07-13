@@ -1,6 +1,7 @@
 "use client"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
+import { useState } from "react"
 
 
 const navLinks = [
@@ -24,8 +25,12 @@ export default function AuthMainLayout({
     children: React.ReactNode
   }>) {
     const pathname = usePathname()
+    const [input, setInput] = useState('')
     return (
      <div>
+       <div>
+        <input type="text" value={input} onChange={(e) => setInput(e.target.value)}/>
+       </div>
         <div  className="flex gap-2">
         {
         navLinks.map(elm => {

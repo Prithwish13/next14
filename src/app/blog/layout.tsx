@@ -9,6 +9,7 @@ export default function BlogLayout({
         <header className="bg-blue-200 p-4">
           <p>Header for blog layout</p>
         </header>
+        <h1>Feature Blogs</h1>
         {children}
         <footer className="bg-green-200 p-4">
           <p>Footer for blog layout</p>
